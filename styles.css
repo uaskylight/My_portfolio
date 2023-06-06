@@ -1,12 +1,188 @@
+/* veriables */
+
+:root {
+  --body-color: #f5f5f5;
+  --main-color: #ffffff;
+  --nav-color: #1b1b1b;
+  --text-color: #9c9c9c;
+  --hero-color: #080808;
+  --title-color: #080808;
+  --color: #d9d9d9;
+  --color: #000000;
+  --btn-hero-color: #408f00;
+  --btn-one-color: #ffa217;
+  --btn-two-color: #000aff;
+  --btn-three-color: #2ab090;
+  --color: #f7f7f7;
+}
+
+/* buttom */
+
+.btn {
+  font-family: "IBM Plex Mono";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+
+  color: #ffffff;
+  box-shadow: 0px 8px 30px rgba(0, 10, 255, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-top {
+  font-family: "IBM Plex Mono";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  background: #3f8e00;
+  border: 1px solid #3f8e00;
+  border-radius: 4px;
+  color: var(--main-color);
+  box-shadow: 1px 1px 3px 0px rgba(87, 120, 61, 0.75);
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(87, 120, 61, 0.75);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(87, 120, 61, 0.75);
+}
+.btn-top:hover,
+.btn-top:focus {
+  background-color: #62ba1b;
+  border: 1px solid #62ba1b;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn-yellow {
+  border: 1px solid var(--btn-one-color);
+  background-color: var(--btn-one-color);
+  box-shadow: 1px 1px 3px 0px rgba(255, 246, 233, 1);
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(255, 246, 233, 1);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(255, 246, 233, 1);
+}
+.btn-yellow:hover,
+.btn-yellow:focus {
+  color: var(--text-color);
+  background-color: rgba(255, 246, 233, 1);
+
+  box-shadow: 1px 1px 3px 0px var(--btn-one-color);
+  -webkit-box-shadow: 1px 1px 3px 0px var(--btn-one-color);
+  -moz-box-shadow: 1px 1px 3px 0px var(--btn-one-color);
+}
+.btn-blue {
+  border: 1px solid var(--btn-two-color);
+  background-color: var(--btn-two-color);
+  box-shadow: 1px 1px 3px 0px rgba(208, 230, 255, 1);
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(208, 230, 255, 1);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(208, 230, 255, 1);
+}
+.btn-blue:hover,
+.btn-blue:focus {
+  color: var(--text-color);
+  background-color: rgba(208, 230, 255, 1);
+  box-shadow: 1px 1px 3px 0px var(--btn-two-color);
+  -webkit-box-shadow: 1px 1px 3px 0px var(--btn-two-color);
+  -moz-box-shadow: 1px 1px 3px 0px var(--btn-two-color);
+}
+.btn-green {
+  border: 1px solid var(--btn-three-color);
+  background-color: var(--btn-three-color);
+  box-shadow: 1px 1px 3px 0px rgba(42, 176, 144, 1);
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(42, 176, 144, 1);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(42, 176, 144, 1);
+}
+.btn-green:hover,
+.btn-green:focus {
+  color: var(--text-color);
+  background-color: rgba(224, 255, 248, 1);
+  box-shadow: 1px 1px 3px 0px var(--btn-three-color);
+  -webkit-box-shadow: 1px 1px 3px 0px var(--btn-three-color);
+  -moz-box-shadow: 1px 1px 3px 0px var(--btn-three-color);
+}
+.btn-work,
+.btn-bottom {
+  font-family: "IBM Plex Mono";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+
+  color: #ffffff;
+
+  background: #3f8e00;
+  border: 1px solid #62ba1b;
+  box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.3);
+  border-radius: 4px;
+}
+.btn-work:hover,
+.btn-work:focus,
+.btn-bottom:hover,
+.btn-bottom:focus {
+  background: #62ba1b;
+  border: 1px solid #3f8e00;
+}
+
+.btn-bottom {
+}
+
+/* body */
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.title {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.17;
+
+  color: var(--title-color);
+}
+.text {
+  line-height: 1.71;
+  letter-spacing: 0.01em;
+
+  color: var(--text-color);
+}
+
 /* header */
 
+div {
+  background-color: var(--nav-color);
+}
 .nav {
-    
 }
 .nav-list {
 }
 .nav-list-item {
 }
+.nav-list a,
+.tel,
+.mail {
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.01em;
+
+  color: var(--text-color);
+}
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--body-color);
+}
+.tel:hover,
+.tel:focus,
+.mail:hover,
+.mail:focus{
+    color: var(--body-color);
+}
+
+
 .networks {
 }
 .networks-item {
@@ -15,16 +191,24 @@
 /* hero */
 
 .hero {
+  background-color: grey;
 }
 .hero-title {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 1.18;
+
+  color: var(--main-color);
 }
 .hero-text {
 }
-.btn {
-}
-.btn-top {
-}
 .hero-text-two {
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  line-height: 1.24;
+
+  color: var(--main-color);
 }
 .hero-list {
 }
@@ -44,27 +228,68 @@
 .studies-item {
 }
 .studies-item-text {
+  font-family: "IBM Plex Mono";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.01em;
+}
+.studies-color-first {
+  color: #ffa217;
+  background-color: rgba(255, 246, 233, 1);
+}
+.studies-color-secondary {
+  color: var(--btn-two-color);
+  background-color: rgba(208, 230, 255, 1);
+}
+.studies-color-primary {
+  color: var(--btn-three-color);
+  background-color: rgba(224, 255, 248, 1);
+}
+
+.studies-text-two {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.16;
+
+  color: var(--title-color);
 }
 .studies-item-two {
-}
-.btn-studies {
 }
 
 /* testimonials */
 
 .testimonials {
+  background-color: var(--title-color);
 }
 .testimonials-title {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.17;
+
+  color: #ffffff;
 }
 .testimonials-text {
 }
 .testimonials-list {
 }
 .testimonials-item {
+  border: 2px solid;
+  border-image: linear-gradient(90deg, rgb(165, 165, 167), rgb(8, 8, 8, 8)) 1;
+
+  margin: 20px;
 }
 .testimonials-item-text {
 }
 .testimonials-item-two {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+
+  color: var(--main-color);
 }
 
 /* recentwork */
@@ -81,20 +306,27 @@
 }
 .recentwork-text {
 }
-.btn-work {
-}
 
 /* getintouch */
 
-.getintouch {
+.section-getintouch {
+  background-color: #080808;
 }
 .getintouch-title {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 40px;
+
+  color: #ffffff;
 }
 .btn-bottom {
 }
 
 /* footer */
-
+footer{
+    background-color: #1b1b1b;
+}
 .footer-list {
 }
 .footer-item {
