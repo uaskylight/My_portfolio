@@ -16,6 +16,44 @@
   --color: #f7f7f7;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 950px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  outline: 2px solid blue;
+}
+
 /* buttom */
 
 .btn {
@@ -34,6 +72,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+  padding: 21px 64px;
 
   background: #3f8e00;
   border: 1px solid #3f8e00;
@@ -50,6 +89,9 @@
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+}
+.btn-top:active {
+  background-color: rgb(86, 147, 37);
 }
 
 .btn-yellow {
@@ -152,10 +194,16 @@ ul {
 
 /* header */
 
-div {
-  background-color: var(--nav-color);
+header > div {
+  width: 1100px;
+  margin: 0 auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  background-color: #1b1b1b;
 }
-.nav {
+.navigation {
+  padding: 25px 0;
 }
 .nav-list {
 }
@@ -178,50 +226,67 @@ div {
 .tel:hover,
 .tel:focus,
 .mail:hover,
-.mail:focus{
-    color: var(--body-color);
+.mail:focus {
+  color: var(--body-color);
 }
-
 
 .networks {
+  margin-left: 95px;
 }
 .networks-item {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: red;
 }
 
 /* hero */
 
 .hero {
-  background-color: grey;
+  background-color: var(--title-color);
 }
+.container > div {
+  width: 538px;
+}
+
 .hero-title {
-  font-family: "Raleway";
+  font-family: "Raleway" sans-serif;
   font-weight: 800;
   font-size: 44px;
   line-height: 1.18;
+  margin-bottom: 10px;
 
   color: var(--main-color);
 }
 .hero-text {
+  margin-bottom: 30px;
 }
 .hero-text-two {
   font-family: "IBM Plex Mono";
   font-size: 14px;
   line-height: 1.24;
+  margin-bottom: 20px;
 
   color: var(--main-color);
 }
 .hero-list {
 }
 .hero-list-item {
+  width: 160px;
+  height: 45px;
+  outline: 2px solid tomato;
 }
 
 /* studies */
 
 .studies {
+  padding: 80px 0;
 }
 .studies-title {
+  margin-bottom: 10px;
 }
 .studies-text {
+  margin-bottom: 50px;
 }
 .studies-list {
 }
@@ -233,6 +298,7 @@ div {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.01em;
+  margin-bottom: 20px;
 }
 .studies-color-first {
   color: #ffa217;
@@ -252,15 +318,18 @@ div {
   font-weight: 800;
   font-size: 24px;
   line-height: 1.16;
+  margin-bottom: 10px;
 
   color: var(--title-color);
 }
 .studies-item-two {
+  margin-bottom: 40px;
 }
 
 /* testimonials */
 
 .testimonials {
+  padding: 80px 0;
   background-color: var(--title-color);
 }
 .testimonials-title {
@@ -268,20 +337,38 @@ div {
   font-weight: 800;
   font-size: 34px;
   line-height: 1.17;
+  margin-bottom: 10px;
 
   color: #ffffff;
 }
 .testimonials-text {
+  margin-bottom: 60px;
 }
 .testimonials-list {
 }
 .testimonials-item {
+    width: 445px;
+    height: 212px;
+  padding: 30px;
   border: 2px solid;
   border-image: linear-gradient(90deg, rgb(165, 165, 167), rgb(8, 8, 8, 8)) 1;
-
-  margin: 20px;
+}
+.testimonials-item img{
+      width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 .testimonials-item-text {
+  font-family: 'IBM Plex Mono';
+font-style: normal;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.01em;
+
+color: #9C9C9C;
+
+  
+    margin-bottom: 30px;
 }
 .testimonials-item-two {
   font-family: "Raleway";
@@ -295,21 +382,34 @@ div {
 /* recentwork */
 
 .recentwork {
+  padding: 80px 0;
 }
 .recentwork-title {
+  padding-bottom: 10px;
+}
+.recentwork-title p{
+  font-family: 'IBM Plex Mono';
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.01em;
+
+color: #9C9C9C;
 }
 .recentwork-list {
 }
 .recentwork-item {
 }
 .recentwork-item-title {
+  margin: 40px 0 20px 0;
 }
 .recentwork-text {
+  margin-bottom: 20px;
 }
 
 /* getintouch */
 
 .section-getintouch {
+  padding: 80px 0;
   background-color: #080808;
 }
 .getintouch-title {
@@ -317,19 +417,29 @@ div {
   font-weight: 800;
   font-size: 34px;
   line-height: 40px;
+  margin-bottom: 10px;
 
   color: #ffffff;
+}
+.getintouch-text{
+  margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .btn-bottom {
 }
 
 /* footer */
-footer{
-    background-color: #1b1b1b;
+footer {
+  background-color: #1b1b1b;
 }
 .footer-list {
 }
 .footer-item {
+  width: 18px;
+  height: 18px;
+  border-radius:50%;
+
+  background-color: red;
 }
 .footer-list-mailtel {
 }
