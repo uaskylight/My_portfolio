@@ -35,6 +35,7 @@ button {
   cursor: pointer;
   padding: 0;
   margin: 0;
+  border: none;
 }
 address {
   font-style: normal;
@@ -98,10 +99,11 @@ a[href]:active {
   font-size: 14px;
   line-height: 1.28;
   color: #ffffff;
+  border:none;
 }
 .btn-green {
   background-color: #62ba1b;
-  border: 1px solid #62ba1b;
+  /* border: 1px solid #62ba1b; */
   border-radius: 4px;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
@@ -115,7 +117,7 @@ a[href]:active {
   background-color: rgb(86, 147, 37);
 }
 .studies-yellow {
-  border: 1px solid var(--btn-one-color);
+  /* border: 1px solid var(--btn-one-color); */
   background-color: var(--btn-one-color);
   box-shadow: 1px 1px 3px 0px rgba(255, 246, 233, 1);
   -webkit-box-shadow: 1px 1px 3px 0px rgba(255, 246, 233, 1);
@@ -134,7 +136,7 @@ a[href]:active {
   background-color: rgba(255, 246, 233, 1);
 }
 .studies-blue {
-  border: 1px solid var(--btn-two-color);
+  /* border: 1px solid var(--btn-two-color); */
   background-color: var(--btn-two-color);
   box-shadow: 1px 1px 3px 0px rgba(208, 230, 255, 1);
   -webkit-box-shadow: 1px 1px 3px 0px rgba(208, 230, 255, 1);
@@ -152,7 +154,7 @@ a[href]:active {
   background-color: rgba(208, 230, 255, 1);
 }
 .studies-green {
-  border: 1px solid var(--btn-three-color);
+  /* border: 1px solid var(--btn-three-color); */
   background-color: var(--btn-three-color);
   box-shadow: 1px 1px 3px 0px rgba(42, 176, 144, 1);
   -webkit-box-shadow: 1px 1px 3px 0px rgba(42, 176, 144, 1);
@@ -294,7 +296,7 @@ header {
 
 .hero {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 45px;
   background-color: black;
 }
 .hero-container {
