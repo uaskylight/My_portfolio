@@ -1,3 +1,10 @@
+/* body */
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: var(--body-color);
+}
+
 /* veriables */
 
 :root {
@@ -99,7 +106,7 @@ a[href]:active {
   font-size: 14px;
   line-height: 1.28;
   color: #ffffff;
-  border:none;
+  border: none;
 }
 .btn-green {
   background-color: #62ba1b;
@@ -173,10 +180,8 @@ a[href]:active {
 }
 
 .recentwork-btn,
-.studies-btn {
-  min-width: 190px;
-  height: 38px;
-  /* padding: 10px 24px; */
+.studies-btn {  
+  padding: 10px 24px;
   border-radius: 4px;
 }
 
@@ -186,11 +191,7 @@ a[href]:active {
   /* padding: 16px 10px; */
 }
 
-/* body */
 
-body {
-  font-family: "IBM Plex Mono", monospace;
-}
 
 h3 {
   font-weight: 800;
@@ -518,14 +519,21 @@ header {
 .recentwork {
   padding-top: 80px;
 }
+.recentwork-container{
+  background-color: white;
+}
 
 .recentwork-title {
   text-align: center;
   margin-bottom: 10px;
 }
+.recentwork-text-block {
+  max-width: 520px;
+  display: flex;
+  margin: auto;
+}
 .recentwork-top-text {
   font-family: "IBM Plex Mono";
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.01em;
@@ -533,10 +541,23 @@ header {
 }
 .recentwork-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin-top: 60px;
 }
 .recentwork-item {
+  max-width: 445px;
+  border: 2px solid rgb(163, 163, 163);
+
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
+}
+.recentwork-item div{
+  padding:10px;
+}
+.recentwork-item img {
+  width: 100%;
 }
 .recentwork-item-title {
   margin: 40px 0 20px 0;
@@ -555,7 +576,6 @@ header {
   text-align: center;
 }
 .getintouch-container {
-  
 }
 .getintouch-title {
   font-family: "Raleway";
@@ -576,14 +596,12 @@ header {
 /* footer */
 footer {
   padding: 25px 0;
-    background-color: #1b1b1b;
-
+  background-color: #1b1b1b;
 }
 footer .container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  
 }
 .footer-list {
   display: flex;
