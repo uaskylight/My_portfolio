@@ -33,31 +33,66 @@
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-list-item">
-                <a href="#" class="">Home</a>
+                <a href="./index.html" class="">Home</a>
               </li>
               <li class="nav-list-item">
-                <a href="#" class="">Case Studies</a>
+                <a href="#Work" class="">Recent work</a>
               </li>
               <li class="nav-list-item">
-                <a href="#" class="">Testimonials</a>
+                <a href="#Case" class="">Case Studies</a>
               </li>
               <li class="nav-list-item">
-                <a href="#" class="">Recent work</a>
+                <a href="#Testimonials" class="">Hobies</a>
               </li>
               <li class="nav-list-item">
-                <a href="#" class="">Get In Touch</a>
+                <a href="#Get In Touch" class="">Get In Touch</a>
               </li>
             </ul>
           </nav>
           <ul class="networks">
             <li class="networks-item">
-              <a href="https://www.facebook.com/aleksandr.tatarintsev"></a>
+              <a
+                href="https://www.facebook.com/aleksandr.tatarintsev"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="networks-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-messenger"></use>
+                </svg>
+              </a>
             </li>
             <li class="networks-item">
-              <a href="https://t.me/uaskylight"></a>
+              <a
+                href="mailto:uaskylight@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="networks-icon gmail" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-gmail"></use>
+                </svg>
+              </a>
             </li>
             <li class="networks-item">
-              <a href="https://twitter.com/uaskylight"></a>
+              <a
+                href="https://t.me/uaskulight"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="networks-icon telegram" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks-item">
+              <a
+                href="https://github.com/uaskylight"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="networks-icon github" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -67,40 +102,107 @@
     <main>
       <!--hero-->
       <section class="hero">
-        <div class="container hero-case">
-          <div class="subcase">
-            <div class="subcase-title">
+        <div class="container hero-container">
+          <div class="hero-sub">
+            <div class="hero-sub-left">
               <h1 class="hero-title">My name is Alex</h1>
               <p class="hero-text text">
-                Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.
+                Hello. I'm full stack developer from the Ukraine. I'll be glad
+                to work with you...
               </p>
               <button class="btn-top btn-green" type="button">
                 Let’s get started
               </button>
             </div>
-            <div>
-              <img
-                src="./images/alexT.jpeg"
-                alt="uaskylight-photo"
-                width="350"
-              />
+            <div class="hero-sub-image">
             </div>
           </div>
-
           <p class="hero-text-two">Worked with</p>
           <ul class="hero-list">
-            <li class="hero-list-item"><a href="#"></a></li>
-            <li class="hero-list-item"><a href="#"></a></li>
-            <li class="hero-list-item"><a href="#"></a></li>
-            <li class="hero-list-item"><a href="#"></a></li>
-            <li class="hero-list-item"><a href="#"></a></li>
+            <li class="hero-list-item">
+              <svg class="hero-icon" width="50" height="50">
+                <use href="./images/svg/symbol-defs.svg#icon-html5"></use>
+              </svg>
+            </li>
+            <li class="hero-list-item">
+              <svg class="hero-icon" width="50" height="50">
+                <use href="./images/svg/symbol-defs.svg#icon-css"></use>
+              </svg>
+            </li>
+            <li class="hero-list-item">
+              <svg class="hero-icon" width="50" height="50">
+                <use href="./images/svg/symbol-defs.svg#icon-sass"></use>
+              </svg>
+            </li>
+            <li class="hero-list-item">
+              <svg class="hero-icon" width="50" height="50">
+                <use href="./images/svg/symbol-defs.svg#icon-js"></use>
+              </svg>
+            </li>
+            <li class="hero-list-item">
+              <svg class="hero-icon" width="50" height="50">
+                <use href="./images/svg/symbol-defs.svg#icon-node-js"></use>
+              </svg>
+            </li>
+            <li class="hero-list-item">
+              <svg class="hero-icon" width="50" height="50">
+                <use href="./images/svg/symbol-defs.svg#icon-react"></use>
+              </svg>
+            </li>
+            <li class="hero-list-item hero-github">
+              <svg class="hero-icon" width="50" height="50">
+                <use href="./images/svg/symbol-defs.svg#icon-github"></use>
+              </svg>
+            </li>
+            <li class="hero-list-item">
+              <svg class="hero-icon" width="50" height="50">
+                <use href="./images/svg/symbol-defs.svg#icon-git"></use>
+              </svg>
+            </li>
+            <li class="hero-list-item">
+              <svg class="hero-icon" width="50" height="50">
+                <use href="./images/svg/symbol-defs.svg#icon-vsc"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="recentwork" id="Work">
+        <div class="container">
+          <h2 class="recentwork-title title">Recent Work</h2>
+          <p class="recentwork-top-text text">
+            Solving user & business problems since last 15+ years. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul class="recentwork-list">
+            <li class="recentwork-item">
+              <img src="./images/1.png" alt="photo" />
+              <h3 class="recentwork-item-title">Work name here</h3>
+              <p class="recentwork-text text">
+                Labore et dolore magna aliqua. sed do eiusmod tempor incididunt
+                ut labore et dolore magna.
+              </p>
+              <button class="btn btn-green recentwork-btn" type="button">
+                Know more
+              </button>
+            </li>
+            <li class="recentwork-item">
+              <img src="./images/1.png" alt="photo" />
+              <h3 class="recentwork-item-title">Work name here</h3>
+              <p class="recentwork-text text">
+                Labore et dolore magna aliqua. sed do eiusmod tempor incididunt
+                ut labore et dolore magna.
+              </p>
+              <button class="btn btn-green recentwork-btn" type="button">
+                Know more
+              </button>
+            </li>
           </ul>
         </div>
       </section>
       <!-- Case Studies -->
-      <section class="studies">
+      <section class="studies" id="Case">
         <div class="container">
           <h2 class="studies-title title">Case Studies</h2>
           <p class="studies-text text">
@@ -158,7 +260,7 @@
         </div>
       </section>
       <!-- Testimonials -->
-      <section class="testimonials">
+      <section class="testimonials" id="Testimonials">
         <div class="container">
           <h2 class="testimonials-title title">Testimonials</h2>
           <p class="testimonials-text text">
@@ -202,43 +304,10 @@
         </div>
       </section>
       <!-- Recent Work -->
-      <section class="recentwork">
-        <div class="container">
-            <h2 class="recentwork-title title">Recent Work</h2>
-            <p class="recentwork-top-text text">
-              Solving user & business problems since last 15+ years. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.
-            </p>
-          <ul class="recentwork-list">
-            <li class="recentwork-item">
-              <img src="./images/1.png" alt="photo" />
-              <h3 class="recentwork-item-title">Work name here</h3>
-              <p class="recentwork-text text">
-                Labore et dolore magna aliqua. sed do eiusmod tempor incididunt
-                ut labore et dolore magna.
-              </p>
-              <button class="btn btn-green recentwork-btn" type="button">
-                Know more
-              </button>
-            </li>
-            <li class="recentwork-item">
-              <img src="./images/1.png" alt="photo" />
-              <h3 class="recentwork-item-title">Work name here</h3>
-              <p class="recentwork-text text">
-                Labore et dolore magna aliqua. sed do eiusmod tempor incididunt
-                ut labore et dolore magna.
-              </p>
-              <button class="btn btn-green recentwork-btn" type="button">
-                Know more
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
+
       <!-- Get In Touch -->
-      <section class="section-getintouch">
-        <div class="container">
+      <section class="section-getintouch" id="Get In Touch">
+        <div class="container getintouch-container">
           <p class="getintouch"></p>
           <h2 class="getintouch-title title">Get In Touch</h2>
           <p class="getintouch-text text">
@@ -264,15 +333,50 @@
     <footer>
       <div class="container">
         <ul class="footer-list">
-          <li class="footer-item">
+          <li class="networks-item">
+            <a
+              href="https://www.facebook.com/aleksandr.tatarintsev"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <svg class="networks-icon" width="20" height="20">
+                <use href="./images/svg/symbol-defs.svg#icon-messenger"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="networks-item">
+            <a
+              href="mailto:uaskylight@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <svg class="networks-icon gmail" width="20" height="20">
+                <use href="./images/svg/symbol-defs.svg#icon-gmail"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="networks-item">
+            <a
+              href="https://t.me/uaskulight"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <svg class="networks-icon telegram" width="20" height="20">
+                <use href="./images/svg/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="networks-item">
             <a
               href="https://github.com/uaskylight"
               target="_blank"
               rel="noopener noreferrer nofollow"
-            ></a>
+            >
+              <svg class="networks-icon github" width="20" height="20">
+                <use href="./images/svg/symbol-defs.svg#icon-github"></use>
+              </svg>
+            </a>
           </li>
-          <li class="footer-item"><a href=""></a></li>
-          <li class="footer-item"><a href=""></a></li>
         </ul>
         <a class="mail" href="mailto:uaskulight@gmail.com"
           >uaskulight@gmail.com</a

@@ -53,7 +53,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
   outline: 2px solid blue;
 }
 
@@ -215,12 +214,7 @@ h3 {
 
 /* header */
 
-header > div {
-  width: 1100px;
-  margin: 0 auto;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-
+header {
   background-color: #1b1b1b;
 }
 .navigation {
@@ -257,35 +251,91 @@ header > div {
   align-items: center;
   gap: 10px;
 }
-.networks-item {
-  width: 18px;
-  height: 18px;
+.networks-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  background-color: red;
+  fill: var(--text-color);
+}
+.networks-icon {
+}
+.networks-item a:hover,
+.networks-item a:focus {
+  fill: #00b2ff;
+}
+.gmail {
+  fill: var(--text-color);
+}
+.gmail:hover,
+.gmail:focus {
+  fill: rgb(206, 17, 17);
+}
+.telegram {
+  width: 25px;
+  height: 25px;
+  fill: var(--text-color);
+}
+.telegram:hover,
+.telegram:focus {
+  fill: #00b2ff;
+}
+.github {
+  width: 25px;
+  height: 25px;
+  fill: var(--text-color);
+}
+.github:hover,
+.github:focus {
+  fill: #eef1f2;
 }
 
 /* hero */
 
 .hero {
-  background-color: var(--title-color);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: black;
+}
+.hero-container {
 }
 
-.hero-case {
-  padding: 160px 15px 100px 15px;
+.hero-sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.subcase {
+.hero-sub-left {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.hero-sub-image {
+  display: flex;
+  width: 380px;
+  height: 280px;
+  border-radius: 25%;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.2),
+      rgba(47, 48, 58, 0.2)
+    ),
+    url(./images/myphoto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* .subcase {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-}
-.subcase-title {
-}
-.container > div {
-}
-.hero img {
-  border-radius: 50%;
-}
+} */
+/* .subcase-title {
+  max-width: 480px;
+} */
+
 .hero-title {
   font-family: "Raleway" sans-serif;
   font-weight: 800;
@@ -313,16 +363,29 @@ header > div {
 }
 .hero-list-item {
   display: flex;
-  width: 160px;
-  height: 45px;
-  outline: 2px solid tomato;
-  flex-wrap: 1;
+  justify-content: center;
+  width: 90px;
+  height: 48px;
+  outline: 2px solid rgb(66, 65, 64);
+
+  box-shadow: 2px 2px 4px 0px rgba(75, 193, 17, 0.76);
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(75, 193, 17, 0.76);
+  -moz-box-shadow: 2px 2px 4px 0px rgba(75, 193, 17, 0.76);
+}
+.hero-list-item:hover,
+.hero-list-item:focus {
+  box-shadow: 3px 3px 10px 0px rgba(75, 193, 17, 0.76);
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(75, 193, 17, 0.76);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(75, 193, 17, 0.76);
 }
 
+.hero-github {
+  fill: white;
+}
 /* studies */
 
 .studies {
-  padding: 80px 0;
+  padding-top: 80px;
 }
 .studies-title {
   text-align: center;
@@ -396,7 +459,6 @@ header > div {
 
 .testimonials {
   padding: 80px 0;
-  background-color: var(--title-color);
 }
 .testimonials-title {
   font-family: "Raleway";
@@ -452,7 +514,7 @@ header > div {
 /* recentwork */
 
 .recentwork {
-  padding: 80px 0;
+  padding-top: 80px;
 }
 
 .recentwork-title {
@@ -484,11 +546,14 @@ header > div {
 /* getintouch */
 
 .section-getintouch {
-  padding: 80px 0;
-  background-color: #080808;
+  padding-bottom: 80px;
+  background-color: var(--title-color);
 }
 .section-getintouch .container {
   text-align: center;
+}
+.getintouch-container {
+  
 }
 .getintouch-title {
   font-family: "Raleway";
@@ -509,15 +574,20 @@ header > div {
 /* footer */
 footer {
   padding: 25px 0;
-  background-color: #1b1b1b;
+    background-color: #1b1b1b;
+
 }
 footer .container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  
 }
 .footer-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 .footer-item {
   width: 18px;
