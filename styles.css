@@ -61,7 +61,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid blue;
 }
 
 /* buttom */
@@ -95,9 +94,9 @@ a[href]:active {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  min-width: 307px;
-  height: 63px;
-  /* padding: 21px 64px; */
+  /* min-width: 307px;
+  height: 63px; */
+  padding: 21px 64px;
   color: #ffffff;
 }
 .btn {
@@ -180,18 +179,16 @@ a[href]:active {
 }
 
 .recentwork-btn,
-.studies-btn {  
+.studies-btn {
   padding: 10px 24px;
   border-radius: 4px;
 }
 
 .btn-footer {
-  min-width: 350px;
-  height: 50px;
-  /* padding: 16px 10px; */
+  /* min-width: 350px;
+  height: 50px; */
+  padding: 16px 10px;
 }
-
-
 
 h3 {
   font-weight: 800;
@@ -471,7 +468,7 @@ header {
   margin-bottom: 10px;
   text-align: center;
 
-  color: #ffffff;
+  color: var(--title-color);
 }
 .testimonials-text {
   text-align: center;
@@ -483,15 +480,23 @@ header {
   gap: 30px;
 }
 .testimonials-item {
-  max-width: 445px;
-  height: 212px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 445px;
   padding: 30px;
   border: 2px solid;
-  border-image: linear-gradient(90deg, rgb(165, 165, 167), rgb(8, 8, 8, 8)) 1;
+
+  background: #0b0b0b;
+  background: linear-gradient(0deg, #0b0b0b 0%, #b4b4b4 80%);
+  background: -webkit-linear-gradient(0deg, #0b0b0b 0%, #b4b4b4 80%);
+  background: -moz-linear-gradient(0deg, #0b0b0b 0%, #b4b4b4 80%);
+
+  border-image: linear-gradient(90deg, rgb(206, 206, 206), rgb(139, 138, 138)) 1;
 }
 .testimonials-item img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 .testimonials-item-text {
@@ -519,7 +524,7 @@ header {
 .recentwork {
   padding-top: 80px;
 }
-.recentwork-container{
+.recentwork-container {
   background-color: white;
 }
 
@@ -546,6 +551,9 @@ header {
   margin-top: 60px;
 }
 .recentwork-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   max-width: 445px;
   border: 2px solid rgb(163, 163, 163);
 
@@ -553,8 +561,8 @@ header {
   -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
 }
-.recentwork-item div{
-  padding:10px;
+.recentwork-item div {
+  padding: 10px;
 }
 .recentwork-item img {
   width: 100%;
@@ -568,8 +576,9 @@ header {
 
 /* getintouch */
 
+
 .section-getintouch {
-  padding-bottom: 80px;
+  padding: 80px 0;
   background-color: var(--title-color);
 }
 .section-getintouch .container {
