@@ -215,6 +215,11 @@ h3 {
 /* header */
 
 header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
   background-color: #1b1b1b;
 }
 .navigation {
@@ -483,7 +488,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 445px;
+  width: 396px;
   padding: 30px;
   border: 2px solid;
 
