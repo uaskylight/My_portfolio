@@ -1,0 +1,98 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #1b1b1b;
+}
+
+.navigation {
+    display: flex;
+    padding: 0 15px;
+}
+
+.nav-list {
+    display: flex;
+
+    &__item {
+        align-items: center;
+    }
+
+    &__item a {
+        display: block;
+        padding: 25px 10px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.nav-list a,
+.tel,
+.mail {
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: 0.01em;
+
+    color: var(--text-color);
+}
+
+.networks {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.networks-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--text-color);
+}
+
+.networks-icon {
+    transition: fill 250ms linear;
+    transform: scale(1);
+}
+
+.networks-item a:hover,
+.networks-item a:focus {
+    fill: #00b2ff;
+    transform: scale(1.2);
+}
+
+.gmail {
+    fill: var(--text-color);
+}
+
+.gmail:hover,
+.gmail:focus {
+    fill: rgb(206, 17, 17);
+}
+
+.telegram {
+    width: 25px;
+    height: 25px;
+    fill: var(--text-color);
+}
+
+.telegram:hover,
+.telegram:focus {
+    fill: #00b2ff;
+}
+
+.github {
+    width: 25px;
+    height: 25px;
+    fill: var(--text-color);
+}
+
+.github:hover,
+.github:focus {
+    fill: #eef1f2;
+}

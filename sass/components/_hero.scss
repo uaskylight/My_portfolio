@@ -1,0 +1,97 @@
+.hero {
+    padding-top: 80px;
+    padding-bottom: 45px;
+    background-color: black;
+}
+
+.hero-container {}
+
+.hero-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-sub-left {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.hero-sub-image {
+    display: flex;
+    width: 380px;
+    height: 280px;
+    border-radius: 0px 100px 0px 100px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.2),
+            rgba(47, 48, 58, 0.2)),
+        url(/images/it.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* .subcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+} */
+/* .subcase-title {
+  max-width: 480px;
+} */
+
+.hero-title {
+    font-family: "Raleway" sans-serif;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 1.18;
+    margin-bottom: 10px;
+
+    color: var(--main-color);
+}
+
+.hero-text {
+    margin-bottom: 30px;
+}
+
+.hero-text-two {
+    display: inline-block;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    line-height: 1.24;
+    margin-bottom: 20px;
+
+    color: var(--main-color);
+}
+
+.hero-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-list-item {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: 48px;
+    outline: 2px solid rgb(66, 65, 64);
+    transition: color 250ms linear,
+        box-shadow 250ms linear;
+    box-shadow: 2px 2px 4px 0px rgba(248, 248, 248, 0.76);
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.76);
+    -moz-box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.76);
+}
+
+.hero-list-item:hover,
+.hero-list-item:focus {
+    box-shadow: 3px 3px 10px 0px rgba(255, 255, 255, 0.76);
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(255, 255, 255, 0.76);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(255, 255, 255, 0.76);
+}
+
+.hero-github {
+    fill: white;
+}

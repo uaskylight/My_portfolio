@@ -1,0 +1,48 @@
+/* .btn {
+  background: #3f8e00;
+  border: 1px solid #3f8e00;
+  border-radius: 4px;
+  color: var(--main-color);
+  box-shadow: 1px 1px 3px 0px rgba(87, 120, 61, 0.75);
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(87, 120, 61, 0.75);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(87, 120, 61, 0.75);
+} */
+
+.btn {
+    font-family: "IBM Plex Mono", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    padding: 21px 64px;
+    color: #ffffff;
+    transition: color 250ms linear;
+
+    &-green {
+        background-color: #62ba1b;
+        /* border: 1px solid #62ba1b; */
+        border-radius: 4px;
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    &-green:hover,
+    &-green:focus {
+        background-color: var(--btn-hero-color);
+    }
+
+    &-green:active {
+        background-color: rgb(86, 147, 37);
+    }
+
+    &__footer {
+        display: inline-flex;
+    }
+
+    &__recentwork {
+        display: inline-flex;
+        padding: 10px 24px;
+        border-radius: 4px;
+    }
+
+}

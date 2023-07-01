@@ -24,30 +24,33 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--header-->
     <header>
       <div>
         <div class="container navigation">
-          <nav class="nav" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
+          <nav
+            class="nav"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <ul class="nav-list">
-              <li class="nav-list-item">
+              <li class="nav-list__item">
                 <a href="./index.html" class="">Home</a>
               </li>
-              <li class="nav-list-item">
+              <li class="nav-list__item">
                 <a href="#Work" class="">Recent work</a>
               </li>
               <!-- <li class="nav-list-item">
                 <a href="#Case" class="">Case Studies</a>
               </li> -->
-              <li class="nav-list-item">
+              <li class="nav-list__item">
                 <a href="#Testimonials" class="">Hobies</a>
               </li>
-              <li class="nav-list-item">
+              <li class="nav-list__item">
                 <a href="#Get-In-Touch" class="">Get In Touch</a>
               </li>
             </ul>
@@ -108,7 +111,7 @@
         <div class="container hero-container">
           <div class="hero-sub">
             <div class="hero-sub-left">
-              <h1 class="hero-title"data-aos="fade-right">My name is Alex</h1>
+              <h1 class="hero-title" data-aos="fade-right">My name is Alex</h1>
               <p class="hero-text text">
                 Hello. I'm full stack developer from the Ukraine. I'll be glad
                 to work with you...
@@ -118,7 +121,7 @@
               </button> -->
               <a
                 href="mailto:uaskylight@gmail.com"
-                class="btn-top btn-green"
+                class="btn btn-green"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -144,7 +147,7 @@
                 <use href="./images/svg/symbol-defs.svg#icon-sass"></use>
               </svg>
             </li>
-            <li class="hero-list-item">
+            <!-- <li class="hero-list-item">
               <svg class="hero-icon" width="50" height="50">
                 <use href="./images/svg/symbol-defs.svg#icon-js"></use>
               </svg>
@@ -158,7 +161,7 @@
               <svg class="hero-icon" width="50" height="50">
                 <use href="./images/svg/symbol-defs.svg#icon-react"></use>
               </svg>
-            </li>
+            </li> -->
             <li class="hero-list-item hero-github">
               <svg class="hero-icon" width="50" height="50">
                 <use href="./images/svg/symbol-defs.svg#icon-github"></use>
@@ -178,7 +181,7 @@
         </div>
       </section>
       <!-- Recent Work -->
-      <section class="recentwork" id="Work">
+      <section class="recentwork gradient" id="Work">
         <div class="container recentwork-container">
           <h2 class="recentwork-title title" data-aos="flip-right">
             Recent Work
@@ -197,7 +200,7 @@
                 <p class="recentwork-text text"></p>
                 <a
                   href="https://uaskylight.github.io/-goit-markup-hw-08/"
-                  class="btn btn-green recentwork-btn"
+                  class="btn btn-green btn__recentwork"
                 >
                   Know more
                 </a>
@@ -210,7 +213,7 @@
                 <p class="recentwork-text text"></p>
                 <a
                   href="https://uaskylight.github.io/barbershop/"
-                  class="btn btn-green recentwork-btn"
+                  class="btn btn-green btn__recentwork"
                 >
                   Know more
                 </a>
@@ -223,7 +226,7 @@
                 <p class="recentwork-text text"></p>
                 <a
                   href="https://uaskylight.github.io/Game-Shop/"
-                  class="btn btn-green recentwork-btn"
+                  class="btn btn-green btn__recentwork"
                 >
                   Know more
                 </a>
@@ -236,7 +239,7 @@
                 <p class="recentwork-text text"></p>
                 <a
                   href="https://uaskylight.github.io/britex/"
-                  class="btn btn-green recentwork-btn"
+                  class="btn btn-green btn__recentwork"
                 >
                   Know more
                 </a>
@@ -264,7 +267,7 @@
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   sed do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
-                <button class="btn studies-yellow studies-btn" type="button">
+                <button class="btn studies-yellow btn__recentwork" type="button">
                   View case study >
                 </button>
               </div>
@@ -279,7 +282,7 @@
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   sed do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
-                <button class="btn studies-blue studies-btn" type="button">
+                <button class="btn studies-blue btn__recentwork" type="button">
                   View case study >
                 </button>
               </div>
@@ -294,7 +297,7 @@
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   sed do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
-                <button class="btn studies-green studies-btn" type="button">
+                <button class="btn studies-green btn__recentwork" type="button">
                   View case study >
                 </button>
               </div>
@@ -304,7 +307,7 @@
         </div>
       </section> -->
       <!-- Testimonials -->
-      <section class="testimonials" id="Testimonials">
+      <section class="testimonials gradient" id="Testimonials">
         <div class="container">
           <h2 class="testimonials-title title" data-aos="flip-right">
             Hobies and Relax
@@ -312,8 +315,11 @@
           <p class="testimonials-text text">
             What I do to relax in my free time.
           </p>
-          <ul class="testimonials-list" data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom">
+          <ul
+            class="testimonials-list"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <li class="testimonials-item">
               <p class="testimonials-item-text text">
                 I like to travel by bicycle, off-road.
@@ -363,7 +369,7 @@
           </button> -->
           <a
             href="mailto:uaskylight@gmail.com"
-            class="btn btn-green btn-footer"
+            class="btn btn-green btn__footer"
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
@@ -373,8 +379,8 @@
       </section>
     </main>
     <!-- footer -->
-    <footer>
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer__container">
         <ul class="footer-list">
           <li class="networks-item">
             <a
@@ -399,7 +405,7 @@
             </a>
           </li>
           <li class="networks-item">
-            <a
+            <amail
               href="https://t.me/uaskulight"
               target="_blank"
               rel="noopener noreferrer nofollow"
@@ -407,7 +413,7 @@
               <svg class="networks-icon telegram" width="20" height="20">
                 <use href="./images/svg/symbol-defs.svg#icon-telegram"></use>
               </svg>
-            </a>
+            </amail>
           </li>
           <li class="networks-item">
             <a
