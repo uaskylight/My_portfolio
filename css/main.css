@@ -38,6 +38,12 @@ a[href] {
   line-height: 1.28;
   transition: color 250ms linear, background-color 250ms linear;
 }
+@media screen and (min-width: 768px) {
+  a[href] {
+    font-weight: nul;
+    font-size: 14px;
+  }
+}
 
 a[href]:hover,
 a[href]:focus {
@@ -53,25 +59,10 @@ img {
 }
 
 .container {
-  width: 100%;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
 }
 
 h3 {
@@ -250,16 +241,32 @@ header {
   background-color: rgb(86, 147, 37);
 }
 .btn__footer {
-  display: flex;
-  width: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .btn__footer {
+    width: 150px;
+    height: 50px;
+  }
 }
 .btn__recentwork {
   display: inline-flex;
   padding: 10px 24px;
   border-radius: 4px;
+}
+.btn-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  padding: 0;
 }
 
 .hero {
@@ -292,6 +299,11 @@ header {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 479px) {
+  .hero-sub-image {
+    height: 200px;
+  }
+}
 
 /* .subcase {
   display: flex;
@@ -305,10 +317,15 @@ header {
 .hero-title {
   font-family: "Raleway" sans-serif;
   font-weight: 800;
-  font-size: 44px;
+  font-size: 24px;
   line-height: 1.18;
   margin-bottom: 10px;
   color: var(--main-color);
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 44px;
+  }
 }
 
 .hero-text {
@@ -416,7 +433,7 @@ header {
 }
 
 .testimonials {
-  padding: 80px 0;
+  margin-bottom: 60px;
 }
 
 .testimonials-title {
@@ -438,6 +455,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  justify-content: space-evenly;
   row-gap: 30px;
 }
 

@@ -19,6 +19,7 @@
     align-items: flex-start;
     justify-content: flex-end;
 }
+
 .hero-sub-image {
     display: flex;
     width: 380px;
@@ -30,6 +31,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (max-width:479px) {
+        height: 200px;
+    }
 }
 
 /* .subcase {
@@ -45,11 +50,16 @@
 .hero-title {
     font-family: "Raleway" sans-serif;
     font-weight: 800;
-    font-size: 44px;
+    font-size: 24px;
     line-height: 1.18;
     margin-bottom: 10px;
 
     color: var(--main-color);
+
+    @include tablet {
+        @include fons (null, 44px, null, null);
+    }
+
 }
 
 .hero-text {
@@ -90,6 +100,7 @@
     -webkit-box-shadow: 3px 3px 10px 0px rgba(255, 255, 255, 0.76);
     -moz-box-shadow: 3px 3px 10px 0px rgba(255, 255, 255, 0.76);
 }
+
 .hero-github {
     fill: white;
 }

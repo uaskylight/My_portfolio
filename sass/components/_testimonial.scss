@@ -1,5 +1,5 @@
 .testimonials {
-    padding: 80px 0;
+margin-bottom: 60px;
 }
 
 .testimonials-title {
@@ -20,6 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    justify-content: space-evenly;
     row-gap: 30px;
 }
 
