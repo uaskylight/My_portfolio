@@ -34,7 +34,7 @@ a {
 a[href] {
   font-family: "IBM Plex Mono";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 8px;
   line-height: 1.28;
   transition: color 250ms linear, background-color 250ms linear;
 }
@@ -53,17 +53,37 @@ img {
 }
 
 .container {
-  width: 950px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 h3 {
   font-weight: 800;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.7;
   color: var(--title-color);
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
 }
 
 .title {
@@ -211,7 +231,7 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  padding: 21px 64px;
+  padding: 10px 40px;
   color: #ffffff;
   transition: color 250ms linear;
 }
@@ -230,7 +250,11 @@ header {
   background-color: rgb(86, 147, 37);
 }
 .btn__footer {
-  display: inline-flex;
+  display: flex;
+  width: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
 }
 .btn__recentwork {
   display: inline-flex;
@@ -456,12 +480,28 @@ header {
 }
 
 .recentwork {
-  padding-top: 80px;
+  padding: 50px 0;
+}
+@media screen and (min-width: 768px) {
+  .recentwork {
+    padding-top: 80px;
+  }
 }
 
 .recentwork-title {
-  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 25px;
+  line-height: 1.71;
+  letter-spacing: 0.01em;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  .recentwork-title {
+    font-size: 30px;
+    line-height: 1.71;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
 }
 
 .recentwork-text-block {
@@ -470,31 +510,38 @@ header {
   margin: auto;
 }
 
-.recentwork-top-text {
-  font-family: "IBM Plex Mono";
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.01em;
-  text-align: center;
-}
-
 .recentwork-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .recentwork-list {
+    justify-content: center;
+  }
+}
 
 .recentwork-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  max-width: 445px;
+  width: 100%;
   border: 2px solid rgb(163, 163, 163);
   background-color: #fff;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
+}
+@media screen and (min-width: 768px) {
+  .recentwork-item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .recentwork-item {
+    width: 445px;
+  }
 }
 
 .recentwork-item div {

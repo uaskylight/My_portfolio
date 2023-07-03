@@ -34,7 +34,8 @@ a {
 a[href] {
     font-family: "IBM Plex Mono";
     font-weight: 400;
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: 8px;
     line-height: 1.28;
     transition: color 250ms linear,
         background-color 250ms linear;
@@ -54,18 +55,35 @@ img {
 }
 
 .container {
-    width: 950px;
+    // width: 950px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+
+    @include mobile {
+        width: 450px;
+    }
+
+    @include tablet {
+        width: 768px;
+    }
+
+    @include desktop {
+        width: 1200px;
+    }
 }
 
 h3 {
     font-weight: 800;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 1.7;
 
     color: var(--title-color);
+
+    @include tablet{
+        font-size: 24px;
+    }
 }
 
 .title {

@@ -13,7 +13,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
-    padding: 21px 64px;
+    // padding: 21px 64px;
+    padding: 10px 40px;
     color: #ffffff;
     transition: color 250ms linear;
 
@@ -36,7 +37,12 @@
     }
 
     &__footer {
-        display: inline-flex;
+        // display: inline-flex;
+        display: flex;
+        width: 120px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
     }
 
     &__recentwork {

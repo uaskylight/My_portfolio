@@ -1,13 +1,21 @@
 .recentwork {
-    padding-top: 80px;
+
+    padding: 50px 0;
+
+    @include tablet {
+            padding-top: 80px;
+    }
 }
 
-
-.gradient{
-    
-}
 .recentwork-title {
-    text-align: center;
+    font-family: "IBM Plex Mono";
+    @include fons(null, 25px, 1.71, 0.01em);
+
+    @include mobile {
+        @include fons(null, 30px, 1.71, 0.01em);
+        text-align: center;
+    }
+
     margin-bottom: 10px;
 }
 
@@ -17,31 +25,39 @@
     margin: auto;
 }
 
-.recentwork-top-text {
-    font-family: "IBM Plex Mono";
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.01em;
-    text-align: center;
-}
+.recentwork-top-text {}
 
 .recentwork-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 60px;
+
+    @include desktop {
+        justify-content: center;
+    }
 }
 
 .recentwork-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    max-width: 445px;
+    // max-width: 445px;
+    width: 100%;
     border: 2px solid rgb(163, 163, 163);
     background-color: #fff;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.35);
+
+    @include tablet {
+        width: 354px;
+    }
+
+    @include desktop {
+        width: 445px;
+
+    }
 }
 
 .recentwork-item div {
