@@ -147,7 +147,6 @@ header {
 .navigation {
   position: relative;
   display: flex;
-  display: flex;
   padding: 0 15px;
 }
 
@@ -205,6 +204,11 @@ header {
   margin-left: auto;
   align-items: center;
   gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .networks {
+    display: flex;
+  }
 }
 
 .networks-item a {

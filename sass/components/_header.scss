@@ -10,7 +10,6 @@ header {
 .navigation {
     position: relative;
     display: flex;
-    display: flex;
     padding: 0 15px;
 }
 
@@ -67,6 +66,10 @@ header {
     margin-left: auto;
     align-items: center;
     gap: 20px;
+
+    @include tablet{
+        display: flex;
+    }
 }
 
 .networks-item a {
