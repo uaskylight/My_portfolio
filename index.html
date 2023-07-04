@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name='freelancehunt' content='707a4deb38ab65d'>
+    <meta name="freelancehunt" content="707a4deb38ab65d" />
     <title>Tataryntsev</title>
     <link
       rel="shortcut icon"
@@ -104,6 +104,26 @@
           </ul>
         </div>
       </div>
+      <button
+        type="submit"
+        class="mobile__btn is-open"
+        aria-expanded="false"
+        data-menu-button
+      >
+        <svg class="mobile__svg" aria-label="button-menu">
+          <use
+            class="mobile__menu"
+            href="./images/svg/symbol-defs.svg#icon-menu"
+          ></use>
+          <use
+            class="mobile__close"
+            href="./images/svg/symbol-defs.svg#icon-close"
+          ></use>
+        </svg>
+      </button>
+      <div class="mobile is-open" data-menu>
+        <p>sdfsdgfadfdsghtrhysytasg</p>
+      </div>
     </header>
     <!--main-->
     <main>
@@ -177,13 +197,11 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <!-- Recent Work -->
-       <section class="recentwork gradient" id="Work">
+      <section class="recentwork gradient" id="Work">
         <div class="container recentwork-container">
-          <h2 class="recentwork-title title" data-aos="flip-right">
-            Recent Work
-          </h2>
+          <h2 class="recentwork-title title">Recent Work</h2>
           <div class="recentwork-text-block">
             <p class="recentwork-top-text text">
               These are my projects. Some of them are still in the process of
@@ -245,7 +263,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <!-- Case Studies -->
       <!-- <section class="studies" id="Case">
         <div class="container">
@@ -342,7 +360,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <!-- Get In Touch -->
       <section class="section-getintouch" id="Get-In-Touch">
         <div class="container getintouch-container">
@@ -365,19 +383,19 @@
        <button class="btn btn-green btn-footer" type="button">
             Submit >
           </button>  -->
-            <a
-                href="mailto:uaskylight@gmail.com"
-                class="btn btn-green btn__footer"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                Submit >
-              </a>
-        </div> 
-      </section> 
+          <a
+            href="mailto:uaskylight@gmail.com"
+            class="btn btn-green btn__footer"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            Submit >
+          </a>
+        </div>
+      </section>
     </main>
     <!-- footer -->
-   <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <ul class="footer-list">
           <li class="networks-item">
@@ -433,6 +451,22 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      (() => {
+        const menuBtnRef = document.querySelector("[data-menu-button]");
+        const mobileMenuRef = document.querySelector("[data-menu]");
+
+        menuBtnRef.addEventListener("click", () => {
+          const expanded =
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+          menuBtnRef.classList.toggle("is-open");
+          menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+          mobileMenuRef.classList.toggle("is-open");
+        });
+      })();
     </script>
   </body>
 </html>

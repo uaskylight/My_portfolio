@@ -1,5 +1,5 @@
 .testimonials {
- padding-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .testimonials-title {
@@ -23,11 +23,16 @@
 }
 
 .testimonials-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
- 
-    gap: 30px;
+
+    gap: 30px
 }
 
 .testimonials-item {
@@ -45,9 +50,9 @@
 
     border-image: linear-gradient(90deg, rgb(206, 206, 206), rgb(139, 138, 138)) 1;
 
-    @include desktop{
+    @include desktop {
         width: 391px;
-   
+
     }
 }
 
@@ -58,7 +63,7 @@
 }
 
 .testimonials-item-text {
-   
+
 
     color: #ffffff;
 
