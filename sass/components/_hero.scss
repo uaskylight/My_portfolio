@@ -7,23 +7,24 @@
 .hero-container {}
 
 .hero-sub {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .hero-sub-left {
-    display: flex;
-    flex-direction: column;
-    width: 480px;
-    align-items: flex-start;
-    justify-content: flex-end;
+    @include tablet {
+        width: 480px;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
 }
 
 .hero-sub-image {
-    display: flex;
-    width: 380px;
-    height: 280px;
+width: 100%;
+height: 200px;
     border-radius: 0px 100px 0px 100px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2),
             rgba(47, 48, 58, 0.2)),
@@ -32,8 +33,15 @@
     background-position: center;
     background-size: cover;
 
-    @media screen and (max-width:479px) {
-        height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        display: flex;
+        justify-content: center;
+        width: 380px;
+        height: 280px;
+        margin: 0;
     }
 }
 
@@ -52,14 +60,22 @@
     font-weight: 800;
     font-size: 24px;
     line-height: 1.18;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     color: var(--main-color);
 
-    @include tablet {
-        @include fons (null, 44px, null, null);
+    @media screen and(max-width:479px) {
+        font-size: 18px;
     }
 
+    @include tablet {
+        @include fons(null, 30px, null, null);
+        margin-bottom: 40px;
+    }
+
+    @include desktop {
+        @include fons(null, 44px, null, null);
+    }
 }
 
 .hero-text {
@@ -69,7 +85,7 @@
 .hero-text-two {
     display: inline-block;
     font-family: "IBM Plex Mono";
-    font-size: 14px;
+    font-size: 10px;
     line-height: 1.24;
     margin-bottom: 20px;
 
@@ -78,17 +94,23 @@
 
 .hero-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    @media screen and(max-width:767px) {
+        margin: -5px;
+    }
 }
 
 .hero-list-item {
     display: flex;
     justify-content: center;
-    width: 90px;
+    margin: 5px;
+    max-width: 150px;
     height: 48px;
+    width: calc((100% - 5px * 12) / 6);
     outline: 2px solid rgb(66, 65, 64);
-    transition: color 250ms linear,
-        box-shadow 250ms linear;
+    transition: color 250ms linear, box-shadow 250ms linear;
     box-shadow: 2px 2px 4px 0px rgba(248, 248, 248, 0.76);
     -webkit-box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.76);
     -moz-box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.76);
@@ -99,6 +121,8 @@
     box-shadow: 3px 3px 10px 0px rgba(255, 255, 255, 0.76);
     -webkit-box-shadow: 3px 3px 10px 0px rgba(255, 255, 255, 0.76);
     -moz-box-shadow: 3px 3px 10px 0px rgba(255, 255, 255, 0.76);
+
+    @media screen and(max-width:767px) {}
 }
 
 .hero-github {

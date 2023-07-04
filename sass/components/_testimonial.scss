@@ -1,34 +1,40 @@
 .testimonials {
-margin-bottom: 60px;
+ padding-bottom: 60px;
 }
 
 .testimonials-title {
     font-family: "Raleway";
     font-weight: 800;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.17;
     margin-bottom: 10px;
     text-align: center;
 
     color: var(--title-color);
+
+    @include tablet {
+        font-size: 34px;
+    }
 }
+
 .testimonials-text {
     text-align: center;
     margin-bottom: 60px;
 }
+
 .testimonials-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: space-evenly;
-    row-gap: 30px;
+    justify-content: center;
+ 
+    gap: 30px;
 }
 
 .testimonials-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 396px;
+    width: 350px;
     padding: 30px;
     border: 2px solid;
 
@@ -38,6 +44,11 @@ margin-bottom: 60px;
     background: -moz-linear-gradient(0deg, #0b0b0b 0%, #b4b4b4 80%);
 
     border-image: linear-gradient(90deg, rgb(206, 206, 206), rgb(139, 138, 138)) 1;
+
+    @include desktop{
+        width: 391px;
+   
+    }
 }
 
 .testimonials-item img {
@@ -47,15 +58,10 @@ margin-bottom: 60px;
 }
 
 .testimonials-item-text {
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.01em;
+   
 
     color: #ffffff;
 
-    margin-bottom: 30px;
 }
 
 .testimonials-item-two {
