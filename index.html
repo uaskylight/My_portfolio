@@ -30,7 +30,7 @@
   <body>
     <!--header-->
     <header>
-      <div>
+
         <div class="container navigation">
           <nav
             class="nav"
@@ -57,18 +57,18 @@
             </ul>
           </nav>
           <ul class="networks">
-            <li class="networks-item">
+            <li class="mobile-list__item">
               <a
                 href="https://www.facebook.com/aleksandr.tatarintsev"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
-                <svg class="networks-icon" width="20" height="20">
+                <svg class="networks-icon messenger" width="20" height="20">
                   <use href="./images/svg/symbol-defs.svg#icon-messenger"></use>
                 </svg>
               </a>
             </li>
-            <li class="networks-item">
+            <li class="mobile-list__item">
               <a
                 href="mailto:uaskylight@gmail.com"
                 target="_blank"
@@ -79,7 +79,7 @@
                 </svg>
               </a>
             </li>
-            <li class="networks-item">
+            <li class="mobile-list__item">
               <a
                 href="https://t.me/uaskulight"
                 target="_blank"
@@ -90,7 +90,7 @@
                 </svg>
               </a>
             </li>
-            <li class="networks-item">
+            <li class="mobile-list__item">
               <a
                 href="https://github.com/uaskylight"
                 target="_blank"
@@ -103,26 +103,80 @@
             </li>
           </ul>
         </div>
+        <button
+          type="submit"
+          class="mobile-btn mobile-btn--open"
+          aria-expanded="false"
+          data-mobile-open
+        >
+          <svg class="mobile-btn__svg mobile-btn__svg--open" aria-label="button-menu">
+            <use
+              href="./images/svg/symbol-defs.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
-      <button
-        type="submit"
-        class="mobile__btn is-open"
-        aria-expanded="false"
-        data-menu-button
-      >
-        <svg class="mobile__svg" aria-label="button-menu">
-          <use
-            class="mobile__menu"
-            href="./images/svg/symbol-defs.svg#icon-menu"
-          ></use>
-          <use
-            class="mobile__close"
-            href="./images/svg/symbol-defs.svg#icon-close"
-          ></use>
-        </svg>
-      </button>
-      <div class="mobile is-open" data-menu>
-        <p>sdfsdgfadfdsghtrhysytasg</p>
+      <div class="mobile is-hidden" data-mobile>
+        <button
+          type="submit"
+          class="mobile-btn mobile-btn--close"
+          aria-expanded="false"
+          data-mobile-close
+        >
+          <svg class='mobile-btn__svg mobile-btn__svg--close'>
+            <use
+              href="./images/svg/symbol-defs.svg#icon-close"
+            ></use>
+          </svg>
+        </button> 
+        <div>
+           <ul class="mobie-list">
+            <li class="mobile-list__item">
+              <a
+                href="https://www.facebook.com/aleksandr.tatarintsev"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="networks-icon messenger" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-messenger"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-list__item">
+              <a
+                href="mailto:uaskylight@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="networks-icon gmail" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-gmail"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-list__item">
+              <a
+                href="https://t.me/uaskulight"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="networks-icon telegram" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-list__item">
+              <a
+                href="https://github.com/uaskylight"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="networks-icon github" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--main-->
@@ -398,18 +452,18 @@
     <footer class="footer">
       <div class="container footer__container">
         <ul class="footer-list">
-          <li class="networks-item">
+          <li class="mobile-list__item">
             <a
               href="https://www.facebook.com/aleksandr.tatarintsev"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
-              <svg class="networks-icon" width="20" height="20">
+              <svg class="networks-icon messenger" width="20" height="20">
                 <use href="./images/svg/symbol-defs.svg#icon-messenger"></use>
               </svg>
             </a>
           </li>
-          <li class="networks-item">
+          <li class="mobile-list__item">
             <a
               href="mailto:uaskylight@gmail.com"
               target="_blank"
@@ -420,7 +474,7 @@
               </svg>
             </a>
           </li>
-          <li class="networks-item">
+          <li class="mobile-list__item">
             <amail
               href="https://t.me/uaskulight"
               target="_blank"
@@ -431,7 +485,7 @@
               </svg>
             </amail>
           </li>
-          <li class="networks-item">
+          <li class="mobile-list__item">
             <a
               href="https://github.com/uaskylight"
               target="_blank"
@@ -448,25 +502,10 @@
         >
       </div>
     </footer>
+    <script src="./js/mobile.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-    <script>
-      (() => {
-        const menuBtnRef = document.querySelector("[data-menu-button]");
-        const mobileMenuRef = document.querySelector("[data-menu]");
-
-        menuBtnRef.addEventListener("click", () => {
-          const expanded =
-            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-
-          menuBtnRef.classList.toggle("is-open");
-          menuBtnRef.setAttribute("aria-expanded", !expanded);
-
-          mobileMenuRef.classList.toggle("is-open");
-        });
-      })();
     </script>
   </body>
 </html>

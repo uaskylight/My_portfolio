@@ -1,6 +1,7 @@
 header {
     position: fixed;
     width: 100%;
+    height: 60px;
     top: 0;
     left: 0;
     z-index: 1;
@@ -89,6 +90,16 @@ header {
 .networks-item a:focus {
     fill: #00b2ff;
     transform: scale(1.2);
+}
+
+.messenger {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-color);
+}
+.messenger:hover,
+.messenger:focus {
+    fill: #00b2ff;
 }
 
 .gmail {
